@@ -5,10 +5,4 @@
 </template>
 
 <script>
-export default{
-name:'testapp',
-components: {
-    TestApplication
-}
-}
 </script>

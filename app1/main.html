@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project draft</title>
+    <link rel="stylesheet" href="/Users/aishah/projects/app1/assets/styles.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar"></div>
+        <a href="">Slide 1  </a>
+        <a href="">Slide 2  </a>
+        <a href="">Slide 3  </a>
+
+      </div>
+
+      <Div>
+
+              <h1>slide 1</h1>
+          </div>
+          <div>
+            <p>this is my first draft of the project that outputs different content along a set of sides that you can scroll down,</p>
+          </div>
+
+        <div>
+          <p>Scroll down the page to get to the next slide</p>
+        </div>
+        <hr class="divider">
+
+        <div class="slidess"></div>
+        <h1>slide 2</h1>
+        <p>This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text. This is some dummy text.
+          This is a single sentence repeated a few times.<p>
+        </div>
+        <hr class="divider">
+
+        <div class="slidess"></div>
+        <h1>slide 3</h1>
+        <form>
+          <h2>Personal Details</h2>
+          Enter your first name<br>
+          <input type="text" name="firstname">
+          <br>
+          Enter your second name<br>
+          <input type="text" name2="secondname">
+        </form>
+        <button v-on:click="submit">Submit</button>
+
+      </div>
+<script>
+export default{
+  props:['event'],
+  methods:{
+    submit(){
+      this.$router.push({
+        name:'FormDetails',
+        params:{}
+      })
+    }
+  }
+}
+</script>
+    <!-- Import App -->
+    <script src="./main.js"></script>
+    <script src="/Users/aishah/projects/app1/form.js"></script>
+    <!-- Mount App -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+  </body>
+</html>
