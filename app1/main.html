@@ -9,10 +9,6 @@
   <body>
     <div id="app">
       <div class="nav-bar"></div>
-        <a href="">Slide 1  </a>
-        <a href="">Slide 2  </a>
-        <a href="">Slide 3  </a>
-
       </div>
 
       <Div>
@@ -42,30 +38,39 @@
 
         <div class="slidess"></div>
         <h1>slide 3</h1>
+
+       <script>
+          export default{
+            data(){
+              return{
+                text:''
+              }
+            }
+              }
+        </script>
+        
         <form>
           <h2>Personal Details</h2>
-          Enter your first name<br>
-          <input type="text" name="firstname">
+          <p>Insert some text here</p>
+          <input v-model="text" placeholder="text here" />
           <br>
-          Enter your second name<br>
-          <input type="text" name2="secondname">
+          <p>Insert some more text here</p>
+          <input v-model="text" placeholder="text here" />
         </form>
-        <button v-on:click="submit">Submit</button>
+        <button v-on:click="click">Click here!</button>
+        <p>Your text will be displayed on the fourth slide</p>
 
       </div>
-<script>
-export default{
-  props:['event'],
-  methods:{
-    submit(){
-      this.$router.push({
-        name:'FormDetails',
-        params:{}
-      })
-    }
-  }
-}
-</script>
+
+      <hr class="divider">
+
+      <div class="slidess"></div>
+      <h1>slide 4</h1>
+      <div class="image">
+       <!---- <img v-bind:src="image">-->
+        <img src="/Users/aishah/projects/app1/assets/html.png" alt="image1">
+      <p>beep boop</p>
+
     <!-- Import App -->
     <script src="./main.js"></script>
     <script src="/Users/aishah/projects/app1/form.js"></script>

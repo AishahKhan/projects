@@ -6,7 +6,7 @@ body {
   }
 
   hr.divider {
-    border-top: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid #8CC0DE;
   }
 
 
@@ -24,21 +24,37 @@ body {
   }
 
   button{
-    text-align: center;
-    background-color: maroon;
-    color: #ddd;
-    text-decoration: none;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F4BFBF;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
   }
 
   .nav-bar {
-    background: linear-gradient(-90deg, #372974, #380606);
+    background: linear-gradient(-90deg, #F4BFBF, #FFD9C0);
     height: 60px;
     margin-bottom: 25px;
     -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    border: 2px solid #d8d8d8;
+    -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+    box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
   }
