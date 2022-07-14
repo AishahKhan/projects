@@ -1,0 +1,16 @@
+<script setup>
+import User from "@/components/User.vue";
+</script>
+<template>
+<User>  </User>
+</template>
+
+<style>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
